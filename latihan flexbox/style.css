@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62,5%;
+}
+ul li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ nav ul {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     width: 80%;
+     margin: 0 auto;
+ }
+
+
+header nav{
+     min-height: 10vh;
+     background-color: rgb(255, 255, 255);
+     padding: 1rem;
+ }
+
+
+ .hero-section {
+     background-image: url("/pexels-vlada-karpovich-4050315.jpg");
+     height: 90vh;
+     background-position: center;
+     background-size: cover;
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+ }
+ .hero-section h3 {
+     color: white;
+     text-align: center;
+     font-size:calc(2rem + 1vw);
+ }
+ button {
+     padding: 1rem 1rem;
+     margin: 2rem;
+     border: none;
+     border-radius: 0.3rem;
+     background-color: rgb(212, 204, 188);
+     cursor: pointer;
+ }
+ button:hover {
+    padding: 1rem 1rem;
+    margin: 2rem;
+    border: none;
+    border-radius: 0.3rem;
+    background-color: rgb(189, 177, 153);
+    cursor: pointer;
+ }
+
+
+ .down-section {
+     display: flex;
+     flex-direction: row;
+     height: 30rem;
+ }
+
+.down-section img{
+    width: 50vw;
+    height: 100%;
+ }
+.text {
+    background-color: rgb(219, 216, 209);
+    width: 100%;
+    display :flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+h2 {
+    margin-bottom: 1.5rem;
+}
+p {
+    margin-bottom: 0.5rem;
+}
+@media(max-width: 500px) {
+    .down-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .down-section img{
+        width: 100%;
+        height: 100%;
+     }
+     .text {
+         margin-top :-0.25rem;
+     }
+
+     h1 {
+        font-size: 1rem;
+    }
+}
